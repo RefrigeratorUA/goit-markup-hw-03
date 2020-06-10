@@ -1,75 +1,57 @@
 :root {
   --bg-main: lightgrey;
-  --heads-color-text: #212121;
+  --letter-spacing-main: 00.03em;
   --main-color-text: #757575;
   --actual-color-text: #2196f3;
+  --second-color-text: #000000;
+  --heads-color-text: #212121;
   --white-index: #ffffff;
-  --letter-spacing-main: 00.03em;
   --footer-bg-color: #2f303a;
-}
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
 }
 body {
   font-family: 'Roboto', sans-serif;
-  color: var(--main-color-text);
-  background-color: var(--bg-main);
   font-size: 14px;
   letter-spacing: var(--letter-spacing-main);
-}
-a {
-  text-decoration: none;
-  color: var(--main-color-text);
-}
-a:visited {
+  background-color: var(--bg-main);
   color: var(--main-color-text);
 }
 ul {
   list-style: none;
 }
-/* Main Header */
-.header-main a {
-  display: inline-block;
-}
-.nav-main {
-  text-align: center;
-}
+
+/* Main Header Logo */
 .logo-header-link {
-  margin-right: 85px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   color: var(--actual-color-text);
 }
-.logo-header-link span {
-  color: black;
-}
+a.logo-header-link,
 a:visited.logo-header-link {
-  color: var(--actual-color-text);
+  text-decoration: none;
 }
-.nav-menu,
-.nav-menu > li {
+.logo-header-link span {
+  color: var(--second-color-text);
+}
+
+/* Main Header Main Navigation */
+.nav-menu-list > li {
   display: inline-block;
   line-height: 76px;
   margin: 0;
   padding: 0;
 }
-.nav-menu > li {
+.nav-menu-list > li {
   margin-right: 50px;
 }
-.nav-menu > a {
+.nav-menu-list > a {
   color: #212121;
   font-weight: 500;
   letter-spacing: 0.02em;
   border-bottom: 4px solid transparent;
 }
-.nav-menu a:hover,
-.nav-menu a:focus,
+.nav-menu-list a:hover,
+.nav-menu-list a:focus,
 .now-page {
   outline-width: 0px;
   border-bottom: 4px solid var(--actual-color-text);
@@ -77,27 +59,28 @@ a:visited.logo-header-link {
   color: var(--actual-color-text);
 }
 
-.nav-contacts,
-.nav-contacts > li {
+.nav-contacts-list,
+.nav-contacts-list > li {
   display: inline-block;
   margin: 0;
   padding: 0;
 }
-.nav-contacts a {
+.nav-contacts-list a {
   color: inherit;
   font-weight: 500;
   letter-spacing: 0.02em;
 }
-.nav-contacts a:hover,
-.nav-contacts a:focus {
+.nav-contacts-list a:hover,
+.nav-contacts-list a:focus {
   color: var(--actual-color-text);
 }
-.nav-contacts {
+.nav-contacts-list {
   margin-left: 225px;
 }
-.nav-contacts > li {
+.nav-contacts-list > li {
   margin-left: 30px;
 }
+
 /* Hero */
 .section-hero {
   text-align: center;
