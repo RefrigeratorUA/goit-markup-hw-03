@@ -16,13 +16,13 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="container nav-display-flex">
         <a href="./index.html" class="logo-header-link">Web <span>Studio</span></a>
 
         <ul class="nav-menu-list">
-          <li><a href="./index.html" class="now-page">Студия</a></li>
-          <li><a href="./portfolio.html">Портфолио</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a href="./index.html" class="active" aria-label="Гланая страница">Студия</a></li>
+          <li><a href="./portfolio.html" aria-label="Портфолио">Портфолио</a></li>
+          <li><a href="#" aria-label="Контакты">Контакты</a></li>
         </ul>
 
         <ul class="nav-contacts-list">
@@ -39,15 +39,17 @@
     <main>
       <!-- Секция заказа. Главный блок -->
       <section class="section-hero">
-        <h1>
-          эффективные решения <br />
-          для вашего бизнеса
-        </h1>
-        <a href="#">Заказать услугу</a>
+        <div class="container">
+          <h1>
+            эффективные решения <br />
+            для вашего бизнеса
+          </h1>
+          <a href="#">Заказать услугу</a>
+        </div>
       </section>
 
       <!-- Ценности. Скилы -->
-      <section class="section-skills">
+      <section class="section-skills container">
         <!-- Скрыть -->
         <h2>Наши ценности</h2>
         <ul>
@@ -77,9 +79,6 @@
           </li>
         </ul>
       </section>
-
-      <!--Горизонтальная линия-->
-      <div>___</div>
 
       <!-- Что делают -->
       <section class="section-what-do">
